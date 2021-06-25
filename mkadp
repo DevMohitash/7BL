@@ -9,5 +9,16 @@ sleep 2
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpext
+
+CLOG=/data/media/0/YourBLchanges.log
+
+kmsg3() {
+	echo -e "[*] $@" >> $CLOG
+}
+
+kmsg3 $(date) 
+kmsg3 "Back to original ButterLimits"
+kmsg3 "----"
+
 sleep 5
 reboot
