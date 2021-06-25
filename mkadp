@@ -2,6 +2,7 @@
 #=======================================#
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
+CLOG=/data/media/0/YourBLchanges.log
 BRANCH="BLExtreme"
 #=======================================#
 #=======================================#
@@ -12,6 +13,15 @@ sleep 2
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blext.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/extreme/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/extreme/system.prop /data/adb/modules/butterlimitsforop7poos11uni
+
+kmsg3() {
+	echo -e "[*] $@" >> $CLOG
+}
+
+kmsg3 $(date) 
+kmsg3 "Extreme Mode Enabled"
+kmsg3 "(with your custom changes if you did any)"
+kmsg3 "----"
 
 sleep 5
 reboot
