@@ -7,9 +7,7 @@ BRANCH="ButterLimits"
 #=======================================#
 sleep 2
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/module.prop /data/adb/modules/butterlimitsforop7poos11uni
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system.prop /data/adb/modules/butterlimitsforop7poos11uni
-
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpz /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextz /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpext
 sleep 5
 reboot
