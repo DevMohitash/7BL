@@ -2,12 +2,12 @@
 #=======================================#
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
-BRANCH="Disable-ZRAM"
+BRANCH="Revert-All-Changes-in-script"
 #=======================================#
 #=======================================#
 sleep 2
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpz /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextz /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpext
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpext
 sleep 5
 reboot
