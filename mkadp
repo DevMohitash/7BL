@@ -3,6 +3,7 @@
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
 CLOG=/data/media/0/YourBLchanges.log
+ZLOG=/data/media/0/YourBLchanges.log
 BRANCH="ButterLimits-(original)-(Balanced)"
 #=======================================#
 #=======================================#
@@ -16,6 +17,10 @@ sleep 2
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system.prop /data/adb/modules/butterlimitsforop7poos11uni
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blzn.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
+
+LOGZR=/data/media/0/blzram.log
+rm $LOGZR
 
 kmsg3 $(date) 
 kmsg3 "ButterLimits Enabled"
