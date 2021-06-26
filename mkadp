@@ -8,6 +8,7 @@ MODE=/data/media/0/modeon.log
 NEWLOG=/data/local/mkadp.log
 NEWLOG2=/data/media/0/.mkadp.log
 LOGFU=/data/media/0/butterlimits.log
+CLOG=/data/media/0/YourBLchanges.log
 BRANCH="999-Uninistall-ButterLimits-Completely"
 #=======================================#
 #=======================================#
@@ -18,7 +19,7 @@ $BB rm -rf $NEWLOG
 $BB rm -rf $NEWLOG2
 $BB rm -rf $LOGFU
 $BB rm -rf $LOGZR
-$BB rm -rf /data/system/overlays.xml
+$BB rm -rf $CLOG
 
 sleep 1
 
