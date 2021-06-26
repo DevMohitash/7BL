@@ -15,6 +15,7 @@ kmsg3() {
 sleep 2
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blzn.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
