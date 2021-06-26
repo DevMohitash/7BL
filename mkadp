@@ -3,7 +3,7 @@
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
 CLOG=/data/media/0/YourBLchanges.log
-BRANCH="BLExtreme-Mode"
+BRANCH="3-BLExtreme-Mode"
 #=======================================#
 #=======================================#
 
