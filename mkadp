@@ -3,7 +3,7 @@
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
 CLOG=/data/media/0/YourBLchanges.log
-BRANCH="BLBattery-Mode"
+BRANCH="2-BLBattery-Mode"
 #=======================================#
 #=======================================#
 sleep 2
