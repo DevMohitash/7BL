@@ -19,6 +19,9 @@ $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl /dat
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system.prop /data/adb/modules/butterlimitsforop7poos11uni
 
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/etc/sysconfig/power_profile_com.google.android.gm.xml /data/adb/modules/butterlimitsforop7poos11uni/system/etc/sysconfig/power_profile_com.google.android.gm.xml
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/product/etc/sysconfig/google.xml /data/adb/modules/butterlimitsforop7poos11uni/system/product/etc/sysconfig/google.xml
+
 kmsg3 $(date) 
 kmsg3 "ButterLimits Enabled"
 kmsg3 "(with your custom changes if you did any)"
