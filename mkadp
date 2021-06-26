@@ -2,6 +2,7 @@
 #=======================================#
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
+LOGZR=/data/media/0/blzram.log
 BRANCH="Revert-All-Changes-in-script"
 #=======================================#
 #=======================================#
@@ -9,6 +10,15 @@ sleep 2
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpext
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbbbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbb
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blzn.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/module.prop /data/adb/modules/butterlimitsforop7poos11uni
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system.prop /data/adb/modules/butterlimitsforop7poos11uni
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/sound/enhanced/etc/mixer_paths_tavil.xml /data/adb/modules/butterlimitsforop7poos11uni/system/vendor/etc/mixer_paths_tavil.xml
+
+LOGZR=/data/media/0/blzram.log
+rm $LOGZR
 
 CLOG=/data/media/0/YourBLchanges.log
 
