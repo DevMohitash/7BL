@@ -3,7 +3,7 @@
 #VARIABLES===============================#
 BB=/data/adb/magisk/busybox
 LOGZR=/data/media/0/blzram.log
-BRANCH="Revert-All-Changes-in-script"
+BRANCH="99-Revert-All-Changes-in-script"
 #=======================================#
 #=======================================#
 sleep 2
