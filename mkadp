@@ -4,7 +4,7 @@
 BB=/data/adb/magisk/busybox
 CLOG=/data/media/0/YourBLchanges.log
 ZLOG=/data/media/0/YourBLchanges.log
-BRANCH="ButterLimits-(original)-(Balanced)"
+BRANCH="1-ButterLimits-(original)-(Balanced)"
 #=======================================#
 #=======================================#
 
