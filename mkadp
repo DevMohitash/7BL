@@ -22,7 +22,6 @@ $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/etc/sysconfig/power_profile_com.google.android.gm.xml /data/adb/modules/butterlimitsforop7poos11uni/system/etc/sysconfig/power_profile_com.google.android.gm.xml
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/product/etc/sysconfig/google.xml /data/adb/modules/butterlimitsforop7poos11uni/system/product/etc/sysconfig/google.xml
 
-$BB cp -rf https://github.com/NotZeetaa/Zeetaa-Tweaks/raw/main/ZeetaaTweaksV3.apk /data/adb/modules/butterlimitsforop7poos11uni
 kmsg3 $(date) 
 kmsg3 "ButterLimits Enabled"
 kmsg3 "(with your custom changes if you did any)"
