@@ -22,9 +22,6 @@ $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/etc/sysconfig/power_profile_com.google.android.gm.xml /data/adb/modules/butterlimitsforop7poos11uni/system/etc/sysconfig/power_profile_com.google.android.gm.xml
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/product/etc/sysconfig/google.xml /data/adb/modules/butterlimitsforop7poos11uni/system/product/etc/sysconfig/google.xml
 
-$BB wget https://github.com/NotZeetaa/Zeetaa-Tweaks/raw/main/ZeetaaTweaksV3.apk -P /data/media/0 
-$BB cp -rf /data/media/0/ZeetaaTweaksV3.apk /data/adb/modules/butterlimitsforop7poos11uni/system/app
-
 kmsg3 $(date) 
 kmsg3
 
