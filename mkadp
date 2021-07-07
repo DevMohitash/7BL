@@ -20,7 +20,6 @@ $BB rm -rf $NEWLOG2
 $BB rm -rf $LOGFU
 $BB rm -rf $LOGZR
 $BB rm -rf $CLOG
-$BB rm -rf /data/adb/modules/butterlimitsforop7poos11uni/system/vendor/etc/mixer_paths_tavil.xml
 sleep 1
 
 
