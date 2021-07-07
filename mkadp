@@ -13,7 +13,6 @@ sleep 2
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blext.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/extreme/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/extreme/system.prop /data/adb/modules/butterlimitsforop7poos11uni
-$BB rm -rf /data/adb/modules/butterlimitsforop7poos11uni/system/vendor/etc/mixer_paths_tavil.xml
 kmsg3() {
 	echo -e "[*] $@" >> $CLOG
 }
