@@ -21,7 +21,39 @@ $BB rm -rf $LOGFU
 $BB rm -rf $LOGZR
 $BB rm -rf $CLOG
 sleep 1
-
+pm enable --user 0 com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator;
+pm enable com.google.android.gms/.common.config.PhenotypeCheckinService
+pm enable com.google.android.location.internal.UPLOAD_ANALYTICS
+pm enable com.google.android.apps.wellbeing/.powerstate.impl.PowerStateJobService
+pm enable com.google.android.apps.wellbeing/androidx.work.impl.background.systemjob.SystemJobService
+pm enable com.facebook.katana/com.facebook.analytics.appstatelogger.AppStateIntentService
+pm enable com.facebook.orca/com.facebook.analytics.apptatelogger.AppStateIntentService
+pm enable com.facebook.orca/com.facebook.analytics2.Logger.LollipopUploadService
+pm enable com.google.android.gms/com.google.android.gms.nearby.bootstrap.service.NearbyBootstrapService
+pm enable com.google.android.gms/NearbyMessagesService
+pm enable com.google.android.gms/com.google.android.gms.nearby.connection.service.NearbyConnectionsAndroidService
+pm enable com.google.android.gms/com.google.location.nearby.direct.service.NearbyDirectService
+pm enable com.google.android.gms/com.google.android.gms.lockbox.LockboxService
+pm enable com.google.android.gms/.measurement.PackageMeasurementTaskService
+pm enable com.google.android.gms/com.google.android.gms.auth.trustagent.GoogleTrustAgent
+pm enable 'com.google.android.gsf/.update.SystemUpdateService'
+pm enable 'com.android.vending/com.google.android.gms.measurement.AppMeasurementReceiver'
+pm enable 'com.google.android.gms/.update.SystemUpdateActivity'
+pm enable 'com.google.android.gms/.update.SystemUpdateService$ActiveReceiver'
+pm enable 'com.google.android.gms/.update.SystemUpdateService$Receiver'
+pm enable 'com.google.android.gms/.update.SystemUpdateService$SecretCodeReceiver'
+pm enable 'com.google.android.gms/com.google.android.gms.analytics.AnalyticsReceiver'
+pm enable 'com.google.android.gms/com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver'
+pm enable 'com.google.android.gms/com.google.android.gms.measurement.AppMeasurementReceiver'
+pm enable 'com.google.android.gms/com.google.android.gms.measurement.AppMeasurementService'
+pm enable 'com.google.android.gms/com.google.android.gms.measurement.PackageMeasurementReceiver'
+pm enable 'com.google.android.gms/com.google.android.gms.measurement.PackageMeasurementService'
+pm enable 'com.google.android.gms/com.google.android.gms.measurement.service.MeasurementBrokerService'
+pm enable 'com.google.android.gms/com.google.android.location.internal.AnalyticsSamplerReceiver'
+pm enable 'com.google.android.gsf/.update.SystemUpdateActivity'
+pm enable 'com.google.android.gsf/.update.SystemUpdatePanoActivity'
+pm enable 'com.google.android.gsf/.update.SystemUpdateService$Receiver'
+pm enable 'com.google.android.gsf/.update.SystemUpdateService$SecretCodeReceiver'
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/unbl/disable /data/adb/modules/butterlimitsforop7poos11uni/disable
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/unbl/remove /data/adb/modules/butterlimitsforop7poos11uni/remove
