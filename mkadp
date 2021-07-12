@@ -28,7 +28,6 @@ $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/eu/* /
 
 kmsg3 $(date)
 kmsg3 "EU Compatible Mode On"
-kmsg3 "This is non-revertable"
 kmsg3 "ButterLimits Enabled"
 kmsg3 "----"
 
