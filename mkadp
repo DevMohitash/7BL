@@ -30,10 +30,10 @@ sleep 1
 
 am start -a android.intent.action.MAIN -e toasttext "ButterLimits Mode Enabled. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
 
-sleep 4
+sleep 5
 
 am start -a android.intent.action.MAIN -e toasttext "Rebooting Now..." -n mkadp.toast/.MainActivity
 
-sleep 1
+sleep 2
 
 reboot
