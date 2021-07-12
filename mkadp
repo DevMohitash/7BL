@@ -14,27 +14,26 @@ kmsg3() {
 
 sleep 1
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bleu.sh /data/adb/modules/butterlimitsforop7poos11uni/bl.sh
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blbbeu.sh /data/adb/modules/butterlimitsforop7poos11uni/blbb.sh
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blexteu.sh /data/adb/modules/butterlimitsforop7poos11uni/blext.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl1.sh /data/adb/modules/butterlimitsforop7poos11uni/bl.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blbb1.sh /data/adb/modules/butterlimitsforop7poos11uni/blbb.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blext1.sh /data/adb/modules/butterlimitsforop7poos11uni/blext.sh
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/serviceeu.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/service1.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/eu/module.prop /data/adb/modules/butterlimitsforop7poos11uni
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/eu/system.prop /data/adb/modules/butterlimitsforop7poos11uni
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/bl/module.prop /data/adb/modules/butterlimitsforop7poos11uni
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/bl/system.prop /data/adb/modules/butterlimitsforop7poos11uni
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/eu/* /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/bl/* /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/
 
 
 kmsg3 $(date)
-kmsg3 "EU Compatible Mode On"
-kmsg3 "This is non-revertable"
+kmsg3 "Disabled EU Compatible Mode"
 kmsg3 "ButterLimits Enabled"
 kmsg3 "----"
 
 sleep 1
 
-am start -a android.intent.action.MAIN -e toasttext "EU Compatible Mode On. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
+am start -a android.intent.action.MAIN -e toasttext "Disabled EU Compatible Mode. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
 
 sleep 4
 
