@@ -12,7 +12,7 @@ kmsg3() {
 	echo -e "[*] $@" >> $CLOG
 }
 
-sleep 2
+sleep 1
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
@@ -21,13 +21,19 @@ $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/system
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/etc/sysconfig/power_profile_com.google.android.gm.xml /data/adb/modules/butterlimitsforop7poos11uni/system/etc/sysconfig/power_profile_com.google.android.gm.xml
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/gms/system/product/etc/sysconfig/google.xml /data/adb/modules/butterlimitsforop7poos11uni/system/product/etc/sysconfig/google.xml
-kmsg3 $(date) 
-kmsg3
 
 kmsg3 $(date) 
 kmsg3 "ButterLimits Enabled"
-kmsg3 "(with your custom changes if you did any)"
 kmsg3 "----"
 
-sleep 5
+sleep 1
+
+am start -a android.intent.action.MAIN -e toasttext "ButterLimits Mode Enabled. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
+
+sleep 4
+
+am start -a android.intent.action.MAIN -e toasttext "Rebooting Now..." -n mkadp.toast/.MainActivity
+
+sleep 1
+
 reboot
