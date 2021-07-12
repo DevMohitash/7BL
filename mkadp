@@ -6,7 +6,8 @@ CLOG=/data/media/0/YourBLchanges.log
 BRANCH="2-BLBattery-Mode"
 #=======================================#
 #=======================================#
-sleep 2
+
+sleep 1
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blbb.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/battery/module.prop /data/adb/modules/butterlimitsforop7poos11uni
@@ -21,5 +22,14 @@ kmsg3 $(date)
 kmsg3 "Battery Mode Enabled"
 kmsg3 "----"
 
-sleep 5
+sleep 1
+
+am start -a android.intent.action.MAIN -e toasttext "Battery Mode Enabled. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
+
+sleep 4
+
+am start -a android.intent.action.MAIN -e toasttext "Rebooting Now..." -n mkadp.toast/.MainActivity
+
+sleep 1
+
 reboot
