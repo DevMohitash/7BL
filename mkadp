@@ -21,8 +21,19 @@ $BB rm -rf $LOGFU
 $BB rm -rf $LOGZR
 $BB rm -rf $CLOG
 sleep 1
-pm enable --user 0 com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator;
-pm enable com.google.android.gms/.common.config.PhenotypeCheckinService
+
+cmd appops set com.google.android.gms BOOT_COMPLETED allow
+cmd appops set com.google.android.ims BOOT_COMPLETED allow
+cmd appops set com.google.android.gsf WAKE_LOCK allow
+cmd appops set com.google.android.gms AUTO_START allow
+cmd appops set com.google.android.ims AUTO_START allow
+cmd appops set com.google.android.ims WAKE_LOCK allow
+
+pm enable com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
+pm enable com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+pm enable com.google.android.gms/com.google.android.gms.auth.setup.devicesignals.LockScreenService
+pm enable com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
+
 pm enable com.google.android.location.internal.UPLOAD_ANALYTICS
 pm enable com.google.android.apps.wellbeing/.powerstate.impl.PowerStateJobService
 pm enable com.google.android.apps.wellbeing/androidx.work.impl.background.systemjob.SystemJobService
@@ -36,6 +47,7 @@ pm enable com.google.android.gms/com.google.location.nearby.direct.service.Nearb
 pm enable com.google.android.gms/com.google.android.gms.lockbox.LockboxService
 pm enable com.google.android.gms/.measurement.PackageMeasurementTaskService
 pm enable com.google.android.gms/com.google.android.gms.auth.trustagent.GoogleTrustAgent
+
 pm enable 'com.google.android.gsf/.update.SystemUpdateService'
 pm enable 'com.android.vending/com.google.android.gms.measurement.AppMeasurementReceiver'
 pm enable 'com.google.android.gms/.update.SystemUpdateActivity'
