@@ -29,6 +29,9 @@ cmd appops set com.google.android.gms AUTO_START allow
 cmd appops set com.google.android.ims AUTO_START allow
 cmd appops set com.google.android.ims WAKE_LOCK allow
 
+pm enable --user 0 com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator;
+pm enable com.google.android.gms/.common.config.PhenotypeCheckinService
+
 pm enable com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
 pm enable com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
 pm enable com.google.android.gms/com.google.android.gms.auth.setup.devicesignals.LockScreenService
