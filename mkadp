@@ -18,12 +18,6 @@ $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bleu.sh /data/adb/modul
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blbbeu.sh /data/adb/modules/butterlimitsforop7poos11uni/blbb.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blexteu.sh /data/adb/modules/butterlimitsforop7poos11uni/blext.sh
 
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadeu /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadp
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbleu /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbl
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbbeu /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbb
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbbbleu /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpbbbl
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpexteu /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpext
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextbleu /data/adb/modules/butterlimitsforop7poos11uni/system/bin/mkadpextbl
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/serviceeu.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/eu/module.prop /data/adb/modules/butterlimitsforop7poos11uni
