@@ -4,7 +4,7 @@
 BB=/data/adb/magisk/busybox
 CLOG=/data/media/0/YourBLchanges.log
 ZLOG=/data/media/0/YourBLchanges.log
-BRANCH="4-EU-compatible-mode-only-when-issue-and-this-is-non-revertable"
+BRANCH="4-EU-compatible-mode-only-when-issue"
 #=======================================#
 #=======================================#
 
