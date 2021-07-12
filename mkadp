@@ -7,12 +7,12 @@ BRANCH="3-BLExtreme-Mode"
 #=======================================#
 #=======================================#
 
-echo "Turning on Extreme Mode if its not already"
-sleep 2
+sleep 1
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blext.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/extreme/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/extreme/system.prop /data/adb/modules/butterlimitsforop7poos11uni
+
 kmsg3() {
 	echo -e "[*] $@" >> $CLOG
 }
@@ -22,5 +22,15 @@ kmsg3 "Extreme Mode Enabled"
 kmsg3 "(with your custom changes if you did any)"
 kmsg3 "----"
 
-sleep 5
+
+sleep 1
+
+am start -a android.intent.action.MAIN -e toasttext "Extreme Mode Enabled. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
+
+sleep 4
+
+am start -a android.intent.action.MAIN -e toasttext "Rebooting Now..." -n mkadp.toast/.MainActivity
+
+sleep 1
+
 reboot
