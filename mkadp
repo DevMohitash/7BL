@@ -15,7 +15,10 @@ kmsg3() {
 sleep 1
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/bl1.sh /data/adb/modules/butterlimitsforop7poos11uni/bl.sh
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zoff.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zbloff1.sh /data/adb/modules/butterlimitsforop7poos11uni/zbloff.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zbboff1.sh /data/adb/modules/butterlimitsforop7poos11uni/zbboff.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zon1.sh /data/adb/modules/butterlimitsforop7poos11uni/zon.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zbloff.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blbb1.sh /data/adb/modules/butterlimitsforop7poos11uni/blbb.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blext1.sh /data/adb/modules/butterlimitsforop7poos11uni/blext.sh
 
