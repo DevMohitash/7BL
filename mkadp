@@ -10,7 +10,7 @@ BRANCH="2-BLBattery-Profile"
 sleep 1
 
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/blbb.sh /data/adb/modules/butterlimitsforop7poos11uni/service.sh
-$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zoff.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
+$BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/zbboff.sh /data/adb/modules/butterlimitsforop7poos11uni/post-fs-data.sh
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/battery/module.prop /data/adb/modules/butterlimitsforop7poos11uni
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/mkadp/battery/system.prop /data/adb/modules/butterlimitsforop7poos11uni
 CLOG=/data/media/0/YourBLchanges.log
