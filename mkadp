@@ -35,6 +35,9 @@ kmsg3 "EU Compatible Mode On"
 kmsg3 "ButterLimits Enabled"
 kmsg3 "----"
 
+$BB rm -rf /cache/*	
+$BB rm -rf /data/dalvik-cache/*
+
 sleep 1
 
 am start -a android.intent.action.MAIN -e toasttext "EU Compatible Mode On. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
