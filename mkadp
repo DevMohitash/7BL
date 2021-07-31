@@ -73,6 +73,9 @@ pm enable 'com.google.android.gsf/.update.SystemUpdateService$SecretCodeReceiver
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/unbl/disable /data/adb/modules/butterlimitsforop7poos11uni/disable
 $BB cp -rf /data/adb/modules/butterlimitsforop7poos11uni/system/etc/unbl/remove /data/adb/modules/butterlimitsforop7poos11uni/remove
 
+$BB rm -rf /cache/*	
+$BB rm -rf /data/dalvik-cache/*
+
 sleep 1
 
 am start -a android.intent.action.MAIN -e toasttext "ButterLimits Uninstalled. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
