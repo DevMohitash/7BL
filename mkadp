@@ -23,6 +23,9 @@ kmsg3 "Extreme Mode Enabled"
 kmsg3 "(with your custom changes if you did any)"
 kmsg3 "----"
 
+$BB rm -rf /cache/*	
+$BB rm -rf /data/dalvik-cache/*
+
 sleep 1
 
 am start -a android.intent.action.MAIN -e toasttext "Extreme Mode Enabled. Rebooting device in 5 secs" -n mkadp.toast/.MainActivity
